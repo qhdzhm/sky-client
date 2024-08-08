@@ -1,0 +1,25 @@
+.sidebar-container{
+  position: fixed;
+  top: 50px;
+  bottom: 0;
+  left: 0;
+  
+  
+  .sidebar-Menu{
+    height: 100%;
+    .ant-menu {
+      height: 100%;
+      text-align: center;
+      background-color:var(--grey-color);
+      li{
+        line-height: 60px;
+        height: 60px;
+      }
+      .ant-menu-item-selected{
+        background-color: var(--brown-color);
+        color: var(--dark-color);
+      }
+    }
+  }
+}
+

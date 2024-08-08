@@ -1,0 +1,37 @@
+.table-bar {
+  justify-content: space-between;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  width: 100%;
+  margin: 20px auto;
+  
+  .ant-input-group-wrapper {
+    width: 300px;
+    .ant-input-wrapper {
+      line-height: 50px;
+    }
+
+    .ant-input-outlined:hover {
+      border-color: var(--brown-color);
+    }
+    
+    .ant-input-affix-wrapper-focused{
+      border-color: var(--brown-color);
+    }
+  }
+  
+ 
+  
+  
+}
+.admin-button{
+  display: flex;
+
+  .ant-btn{
+    height: 30px;
+    width: 70px;
+    margin-right: 20px;
+  }
+  
+}

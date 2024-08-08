@@ -1,0 +1,51 @@
+.order-manager {
+  width: 100%;
+  height: 200px;
+  background-color: var(--white-color);
+  margin: 20px 0;
+  padding: 20px 20px;
+  border-radius: 10px;
+  color: #666;
+
+  .title {
+    font-weight: 500;
+
+    .date {
+      margin-left: 5px;
+      font-size: 12px;
+      font-weight: normal;
+      color: #666;
+    }
+  }
+
+  .body {
+    margin-top: 10px;
+
+    ul {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+
+      li {
+        background-color: #fffbf0;
+        height: 115px;
+        width: 200px;
+        padding: 20px;
+
+        .tit {
+          font-size: 13px;
+        }
+
+        .num {
+          font-size: 28px;
+          font-weight: 700;
+        }
+      }
+    }
+
+    .red {
+      color: red;
+    }
+
+  }
+}

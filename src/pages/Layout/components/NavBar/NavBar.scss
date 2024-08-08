@@ -1,0 +1,207 @@
+.navbar {
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  .status-box {
+    // flex: 1;
+    height: 100%;
+    align-items: center;
+
+    .hamburger {
+      padding: 0 15px 0 20px;
+      cursor: pointer;
+      &:hover {
+        color: var(--dark-color);
+        background: rgba(0, 0, 0, 0.025);
+      }
+    }
+
+    .businessBtn {
+      height: 30px;
+      line-height:30px;
+      background-color: var(--dark-color);
+      border-radius: 7px;
+      border: 2px solid var(--white-color);
+      color: var(--white-color);
+      padding: 0px 8px;
+      font-size: 12px;
+      margin-right: 80px;
+    }
+    
+  }
+
+  .right-menu {
+
+    .navicon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 20px;
+      width: 150px;
+      line-height: 50px;
+      height: 30px;
+
+      &:hover {
+        background: rgba(255, 255, 255, 0.10);
+      }
+
+      cursor: pointer;
+
+      i {
+        margin-right: 10px;
+        width: 18px;
+        height: 18px;
+        background: url(../../../../assets/icons/btn_gaimi@2x.png) center/cover no-repeat;
+      }
+    }
+
+
+    .right-status {
+      display: flex;
+      width: 180px;
+      line-height: 60px;
+      justify-content: center;
+    }
+  }
+
+  .avatar-wrapper {
+    position: relative;
+    top: 8px;
+    height: 50px;
+    width: 200px;
+
+    &:hover {
+      background-color: var(--white-color);
+
+      .arrow-down {
+        transform: rotate(180deg);
+      }
+    }
+
+    .ant-btn {
+      display: flex;
+      justify-content: space-between;
+      position: absolute;
+      top: 0;
+      right: 0;
+      background-color: rgba(255, 255, 255, 0.52);
+      text-align: right;
+      border-radius: 4px;
+      width: 100%;
+      padding-left: 12px;
+      border: 0 none;
+      height: 32px;
+      line-height: 32px;
+    }
+
+    .userList {
+      position: absolute;
+      align-items: start;
+      top: 0;
+      right: 0;
+      height: 100%;
+      width: 200px;
+      transform: translateY(99%);
+      background-color: var(--white-color);
+      transition: var(--transition);
+
+      p {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+        width: 200px;
+        padding: 10px 5px;
+        font-size: 11px;
+        background-color: var(--white-color);
+        z-index: 999;
+        cursor: pointer;
+
+        &:hover {
+          background-color: var(--brown-color);
+        }
+      }
+
+      .change-password {
+        i {
+          width: 12px;
+          height: 12px;
+          background: url(../../../../assets/icons/btn_gaimi@2x.png) center/cover no-repeat;
+        }
+      }
+
+      .logout {
+        i {
+          width: 12px;
+          height: 12px;
+          background: url(../../../../assets/icons/btn_close@2x.png) center/cover no-repeat;
+        }
+      }
+    }
+  }
+
+
+}
+
+.ant-modal-content {
+  margin: auto;
+  width: 320px;
+  height: 500px;
+
+  .ant-modal-header .ant-modal-title {
+    margin-top: 15px;
+    color: var(--dark-color);
+  }
+  .ant-modal-body .ant-radio-group{
+    
+    width: 250px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    .ant-radio-wrapper{
+      display: flex;
+      border: 2px solid var(--grey-color);
+      border-radius: 10px;
+      background-color: #fbfbfa;
+      padding: auto;
+      span{
+        padding: 3px 7px;
+      }
+      &:hover{
+        border: 2px solid var(--brown-color);
+        .ant-radio-inner{
+          border: 1px solid var(--brown-color);
+        }
+      }
+      h3{
+        margin-bottom: 15px;
+      }
+      .ant-radio{
+        margin-right: 10px;
+      }
+      .ant-radio-checked .ant-radio-inner{
+        background-color:var(--brown-color);
+        border: 1px solid var(--brown-color);
+      }
+    }
+  }
+  .ant-modal-footer{
+    .ant-btn {
+      &:hover{
+        border: 1px solid var(--brown-color);
+        color: var(--brown-color);
+      }
+    }
+    .ant-btn-primary{
+      background-color: var(--brown-color);
+      &:hover{
+        background-color:rgba(255, 255, 255, 0.22)
+      }
+    }
+  }
+}

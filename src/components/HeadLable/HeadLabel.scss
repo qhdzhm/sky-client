@@ -1,0 +1,26 @@
+.head-label {
+  height: 60px;
+  line-height: 60px;
+  .goback {
+    display: flex;
+    align-items: center;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    font-weight: 400;
+    cursor: pointer;
+    margin-right: 10px;
+    img {
+      height: 18px;
+      width: 18px;
+      margin-right: 10px;
+    }
+  }
+  .title{
+    height: 20px;
+    line-height: 20px;
+    font-weight: 500;
+    border-left: 1px solid  #abb0b6;
+    padding-left: 10px;
+  }
+}

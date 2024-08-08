@@ -1,0 +1,146 @@
+.statitic {
+  
+
+  .header {
+    justify-content: space-between;
+
+    .ant-menu {
+      margin-top: 5px;
+      background-color: var(--grey-color);
+
+      .ant-menu-item-selected {
+        background-color: var(--brown-color);
+        color: var(--white-color);
+
+        &::after {
+          border-bottom-color: var(--white-color);
+        }
+      }
+
+      .ant-menu-item:hover {
+        background-color: #f0f0f0;
+        color: #333;
+
+        &::after {
+          border-bottom-color: var(--brown-color);
+        }
+      }
+    }
+
+    .date-selected {
+      flex: 1;
+      margin-left: 10px;
+    }
+  }
+
+}
+
+
+
+.one {
+  display: flex;
+  line-height: 10px;
+
+  span {
+    background-color: #ffc100;
+    margin: 0 10px;
+    width: 10px;
+    height: 10px;
+  }
+}
+
+.three {
+  display: flex;
+  line-height: 10px;
+
+  span {
+    background-color: #fd7f7f;
+    margin: 0 10px;
+    width: 10px;
+    height: 10px;
+  }
+}
+
+.body {
+  width: 100%;
+  height: auto;
+  flex-wrap: wrap;
+
+  .turnover-container {
+    flex: 46%;
+    margin: 10px 10px 0 10px;
+    background-color: var(--white-color);
+    border-radius: 10px;
+    height: 400px;
+
+    .homeTitle {
+      font-size: 17px;
+      margin-bottom: 10px;
+    }
+
+    .orderListLine {
+      font-size: 13px;
+      text-align: center;
+    }
+  }
+
+  .user-container {
+    flex: 46%;
+    background-color: var(--white-color);
+    border-radius: 10px;
+    margin: 10px 10px 0 10px;
+    height: 400px;
+
+    .homeTitle {
+      font-size: 17px;
+      margin-bottom: 10px;
+    }
+
+    .orderListLine {
+      display: flex;
+      font-size: 13px;
+      justify-content: center;
+    }
+  }
+
+  .order-container {
+    flex: 46%;
+    background-color: var(--white-color);
+    border-radius: 10px;
+    margin: 10px 10px 0 10px;
+    height: 400px;
+
+    .orderProportion {
+      font-size: 13px;
+      display: flex;
+
+      .symbol {
+        padding: 10px 15px;
+      }
+    }
+
+    .homeTitle {
+      font-size: 17px;
+      margin-bottom: 10px;
+    }
+
+    .orderListLine {
+      display: flex;
+      font-size: 13px;
+      justify-content: center;
+    }
+  }
+
+  .top10-container {
+    flex: 46%;
+    background-color: var(--white-color);
+    border-radius: 10px;
+    margin: 10px 10px 0 10px;
+    height: 400px;
+
+    .homeTitle {
+      font-size: 17px;
+      margin-bottom: 10px;
+    }
+  }
+}

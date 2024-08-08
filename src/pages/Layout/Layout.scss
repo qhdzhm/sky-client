@@ -1,0 +1,61 @@
+.app-wrapper{
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: auto;
+  background-color: var(--grey-color);;
+  .appmain{
+    background-color: var(--light-grey-color);
+    min-height: 900px;
+    padding-top: 30px;
+  }
+}
+.layout-content{
+  min-height: 700px;
+}
+.sidebar-container{
+  width: 250px;
+  height: 100%;
+  .ant-menu {
+    overflow-y: auto;
+  }
+  .sidebar-logo-mini{
+    height: 50px;
+    vertical-align: auto;
+    text-align: center;
+    img{
+      padding-top: 10px;
+      margin: auto;
+      width: 100px;
+      height: 50px;
+    }
+  }
+  .sidebar-logo{
+    height: 50px;
+    text-align: center;
+    img{
+      padding-top: 10px;
+      margin: auto;
+      width: 40px;
+      height: 50px;
+    }
+  }
+}
+.main-container {
+  position: relative;
+  min-height: 100%;
+  transition: margin-left 0.28s;
+  margin-left: 250px;
+}
+
+.hideSidebar {
+  .main-container{
+    margin-left: 80px;
+    transition: var(--transition);
+  }
+  .sidebar-container{
+    width: 80px;
+    transition: var(--transition);
+  }
+}

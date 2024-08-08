@@ -1,0 +1,56 @@
+.dish-meal-container{
+  display: flex;
+  width: 100%;
+  height: 200px;
+
+  margin: 20px 0;
+  border-radius: 10px;
+  color: #666;
+  .dish-manager{
+    flex: 47%;
+  }
+  .meal-manager{
+    flex: 47%;
+  }
+  .header{
+    margin-bottom: 20px;
+  }
+  .body{
+    display: flex;
+    justify-content: space-between;
+    .on-sale,.out-of-sale{
+      width: 200px;
+      height: 113px;
+      background-color: #fffbf0;
+      line-height: 113px;
+      padding: 0 20px;
+      
+    }
+    .on-sale{
+      .num{
+        margin-left: 70px;
+      }
+    }
+    .out-of-sale{
+      .num{
+        margin-left: 50px;
+      }
+    }
+    .ant-btn-primary{
+      width: 100px;
+      height: 110px;
+    }
+  }
+  .dish-manager{
+    background-color: var(--white-color);
+    margin-right: 20px;
+    padding: 10px 20px;
+    border-radius: 10px;
+  }
+  .meal-manager{
+    background-color: var(--white-color);
+    padding: 10px 20px;
+    border-radius: 10px;
+  }
+  
+}
